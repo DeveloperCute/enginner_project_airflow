@@ -1,0 +1,19 @@
+Aprendizados estudos:
+winget upgrade --all -> Verifica pacotes que estão desatualizados windows(muito seguro)
+
+Requirements: 
+	-> Arquivo contendo os pacotes e respectivas versões do projeto.
+Arquivos físicos usando docker compose precisam persistir no caminho include/
+Se estivesse usando o MinIO não precisaria persistir num local físico 
+
+pip freeze | grep - E "pandas|duckdb" -> saber a versão localmente
+
+
+astro dev run dags trigger pipeline_extrato_bancario
+astro dev start
+astro dev restart
+astro dev pause
+
+
+Funções auxiliares separadas das task
+Só pode encadear task
