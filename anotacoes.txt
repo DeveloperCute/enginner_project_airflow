@@ -13,7 +13,11 @@ astro dev run dags trigger pipeline_extrato_bancario
 astro dev start
 astro dev restart
 astro dev pause
-
+docker rm -f spark-master spark-worker minio -> Apagar os container
+docker-compose -f docker-compose.override.yml up -> subir o arquivo docker.compose isolado do airflow
 
 Funções auxiliares separadas das task
 Só pode encadear task
+
+
+COMMANDS

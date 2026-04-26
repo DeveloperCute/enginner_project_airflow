@@ -1,0 +1,10 @@
+Data;Lançamento;Detalhes;N° documento;Valor;Tipo Lançamento
+30/01/2026;Saldo Anterior; ; ;"8,00"; 
+02/02/2026;Pix - Enviado;20/01 14:20 LIST LIST;20201;"-4,00";Saída
+02/02/2026;Pix - Enviado;20/01 14:20 LIST LIST;20202;"-3,00";Saída
+00/00/0000;Saldo do dia; ; ;"1,00"; 
+03/02/2026;Pix - Recebido;20/01 14:20 LIST LIST;20201;"100,00";Entrada
+00/00/0000;Saldo do dia; ; ;"101,00"; 
+04/02/2026;Pix - Enviado;20/01 14:20 LIST LIST;20401;"-4,00";Saída
+04/02/2026;Pix - Enviado;20/01 14:20 LIST LIST;20402;"-4,00";Saída
+04/02/2026;S A L D O; ; ;"93,00"; 

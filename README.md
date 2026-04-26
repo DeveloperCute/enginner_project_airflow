@@ -1,25 +1,19 @@
 Overview
 ========
 
-Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
+Esse projeto tem como objetivo aplicar e materializar conceitos de engenharia de dados, tais como: orquestração com airflow, armazenamento distribuído com MinIO e processamento
+distribuído com Spark.
+Fica claro que o objetivo aqui é totalmente voltado ao estudo, como forma de aprimoramento dos conceitos e aplicações no mundo real.
 
-Project Contents
-================
+O projeto foi desenvolvido baseado no Astro CLI.
 
-Your Astro project contains the following files and folders:
+A estrutura do projeto está divida em: 
+1. Ler um arquivo CSV de finanças e guardar em sua forma bruta na camada bronze.
 
-- dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes one example DAG:
-    - `example_astronauts`: This DAG shows a simple ETL pipeline example that queries the list of astronauts currently in space from the Open Notify API and prints a statement for each astronaut. The DAG uses the TaskFlow API to define tasks in Python, and dynamic task mapping to dynamically print a statement for each astronaut. For more on how this DAG works, see our [Getting started tutorial](https://www.astronomer.io/docs/learn/get-started-with-airflow).
-- Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
-- include: This folder contains any additional files that you want to include as part of your project. It is empty by default.
-- packages.txt: Install OS-level packages needed for your project by adding them to this file. It is empty by default.
-- requirements.txt: Install Python packages needed for your project by adding them to this file. It is empty by default.
-- plugins: Add custom or community plugins for your project to this file. It is empty by default.
-- airflow_settings.yaml: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as you develop DAGs in this project.
+2. Ler o arquivo CSV da camada bronze aplicar técnicas de tratamento de dados e salvar na camada prata em formato parquet.
 
-Project Objective
-=================
+3. Ler o arquivo CSV da camada prata e aplicar regras de negócios para visualização, storytelling, agrupamentos, etc.
 
-- This Project has the objective to train concecpts of data enginner. 
-- Was used Airflow, Spark, conteiners Docker, DuckDB and MinIO.
-- The idea is to read a local file after this to set on MinIO the original data, afeter to read again and to transform with Spark.
+O projeto está sendo construído da seguinte forma: 
+![alt text](image.png)
+# enginner_projetct_airflow

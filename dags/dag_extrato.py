@@ -9,6 +9,7 @@ from include.database.connection import get_connection
 from duckdb_provider.hooks.duckdb_hook import DuckDBHook
 
 
+
 def rename_columns(df):
     rename_columns_dict = {'Data':'data',
         'Lançamento':'lancamento',
